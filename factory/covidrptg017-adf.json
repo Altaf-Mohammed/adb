@@ -1,0 +1,9 @@
+{
+	"name": "covidrptg017-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7c3ad573-8f7a-4017-be0f-67561270f835",
+		"tenantId": "585bda71-88ce-428b-9832-95eaa3dce989"
+	}
+}
