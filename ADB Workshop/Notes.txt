@@ -1,0 +1,43 @@
+Azure Databricks:
+=================
+-- Magic Commands (%sql, % scala, %python, %fs, %md, %sh, %run)
+-- Dbutils - (Widgets, Notebook, Secrets)
+
+-- App Registration 
+	-- Application (client) ID: 1c575984-87b9-47e3-b8e6-660308feeafc
+	-- Object ID : 504f82fb-7f3b-4c56-b885-37587f89a706
+	-- Directory (tenant) ID : 585bda71-88ce-428b-9832-95eaa3dce989
+	-- Creating Certificate & Secrete
+		-- adding secret:  
+			-- Name		: adb-access-secrete
+			-- Value	: uii7Q~4tB9aStmtjQ_VG3adCWqZWnWRELhdA.
+			-- Secret 	: 7827e64a-f92e-4778-b599-73fecc932442
+	-- Storage Account 
+		-- IAM
+			-- Add Role
+				-- Storage Blob Data Contributor
+				-- in Members : Select the Service Principle
+				-- Review and assign
+	--Secret Scope
+		-- Databricks backed Secret Scope (Create using CLI)
+		-- Azure Key-vault backed Secret Scope (created using GUI)
+		-- Create Key-vault
+			-- Secret --> Generate/ Import 
+				-- Create all three Secrets --(Client ID, Tenant ID, Client Secret)
+					-- adb-app-client-id
+					-- adb-app-client-secret
+					-- adb-app-tenant-id
+		-- Databricks Secret UI 
+			-- add to ADB Home url- "#secrets/createScope"
+				-- Scope Name, Manage Principle
+				-- DNS Name : https://formula1dl-key-vault-017.vault.azure.net/ (get from Key-vault properties)
+				-- Resource ID : /subscriptions/998c29be-a322-427d-8f3f-0ec4937d9d9c/resourceGroups/adbLabs1987/providers/Microsoft.KeyVault/vaults/formula1dl-key-vault-017
+	/mnt/sgformula1dl1987/raw
+	/mnt/sgformula1dl1987/processed
+	-- Pyspark Dataframe API Reference
+	-- pyspark.sql.functions - 
+	-- pyspark.sql.types - 
+	-- 
+
+	
+
